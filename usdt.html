@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading App Website Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo"><i class="fas fa-money-bill-trend-up"></i>
+                SOS Trading Co.</a>
+                <div class="head">
+                    <a href="profile.html" class="btn">Profile</a>
+                    <a href="home.html" class="btn">Home</a>
+                </div>
+        </section>
+    </header>
+
+    <div class="navbar">
+        <nav class="nav">
+            <a href="menu.html"><i class="fas fa-menu"></i><span>menu</span></a>
+            <a href="about.html"><i class="fas fa-circle-info"></i><span>about</span></a>
+            <a href="plans.html"><i class="fas fa-comments-dollar"></i><span>plans</span></a>
+            <a href="contact.html"><i class="fas fa-user"></i><span>contact us</span></a>
+        </nav>
+      </div>
+
+    <section class="dashboard">
+        <h1>Make Payment</h1><br>
+        <div class="p">
+           <p>You are to make payment using your selected payment method.
+              Screenshot and upload the proof of payment.
+           </p>
+        </div>
+       
+        <div class="transactions">
+            <h3>USDT (TRC20)</h3><br><br>
+            <p>USDT (TRC20) Address:</p><br><br>
+            <div class="copyinp">
+            <input type="text" id="text-1" value="TASVgmZxL7MyzcFq3qc7f9KXZzc8EuWcF5" 
+            placeholder="TASVgmZxL7MyzcFq3qc7f9KXZzc8EuWcF5">
+            <button class="copy" onclick="copy('text-1')">Copy Text</button> <br><br>
+            </div>
+            <p>Network Type: TRC20</p><br><br>
+            <p class="box">*Don't have USDT (TRC20), buy using the link below
+                (ensure you copy the wallet address above and buy strictly to the address)
+                <a href="https://changelly.com/buy-crypto" class="btn">$ Buy USDT(TRC20)</a>
+            </p> <br><br>
+            <p>Upload proof of Payment (screenshot).</p><br><br>
+            <input type="file" name="" id=""><br><br>
+            <button class="btn" id="open-popup-btn1">Submit Payment</button>
+        </div>
+    </section>
+
+    <div class="pop-on centered">
+        <div class="icon">
+            !
+        </div>
+        <div class="title">
+            Pending!!
+        </div>
+        <div class="description">
+            Your deposit is currently been reviewed 
+            and would be sent to your account balance shortly. <br><br>
+            <a href="home.html" class="btn">Done</a>
+        </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
